@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "sc",
+            "nativeLanguage": "zh-cn"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "schoolCard",
+        "packageName": "sc",
+        "packageFolder": "sc",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": false,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "mysql",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "ZGIzZmVjY2UxZTU0YTY2OTlkNzFjYTUwNDYxMzBhNjMwNGZiOGM1ZmYwZGVjNDc1ZjJhOWJmNzA0YjhjODM1YjcyNDMzZGMxYjA3OTA0NzVlNGRiNzRiZDA4OGZhZjk4OTc3ZGI4M2E0YTY2YmI3ZTU3NTA2ZmE5MWY3YTg5Yzk=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "zh-cn",
+        "languages": ["zh-cn", "en"]
+    }
+}
