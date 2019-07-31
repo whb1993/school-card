@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "student": "Student",
+                "teacher": "Teacher",
+                "admin": "Admin",
+                "card": "Card",
+                "fillInf": "Fill Inf",
+                "lostInf": "Lost Inf",
+                "pressInf": "Press Inf",
+                "libraryInf": "Library Inf",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

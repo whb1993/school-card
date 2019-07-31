@@ -1,0 +1,59 @@
+entity Student {
+	Sid String
+	Sname String required
+	Ssex String
+	Sspecial String
+	Sclass String
+}
+
+entity Teacher {
+	Tid String
+	Tname String
+	Tsex String
+	Tspecial String
+}
+entity Admin {
+	Adid String
+	Adname String
+	Adsex String
+}
+entity Card {
+	CardId String
+	Cardnum String
+	Sname String
+	Ssex String
+	Cardstyle String
+	Cardmoney String
+	Cardstates String
+	Cardtime Instant
+}
+entity FillInf {
+	Cardno String
+	Cardstyle String
+	Cardno String
+	Fillmoney String
+	Filltime Instant
+	AdId String
+	Fillnum String
+}
+entity LostInf {
+	LostId String
+	CardId String
+	Lostime Instant
+	AdId String
+}
+entity PressInf {
+	PressId String
+	Pplace String
+	CardId String
+	Pmoney String
+	Ptime Instant
+}
+entity LibraryInf {
+	BookId String
+	Bookno String
+	Cardstates String
+	Borlist String
+	Adid String
+	LibId String
+}

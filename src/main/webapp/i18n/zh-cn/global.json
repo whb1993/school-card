@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "数据",
+                "student": "学生信息表",
+                "teacher": "教职工信息表",
+                "admin": "管理员信息表",
+                "card": "校园卡信息表",
+                "fillInf": "充值表",
+                "lostInf": "挂失表",
+                "pressInf": "消费表",
+                "libraryInf": "图书馆信息表",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
