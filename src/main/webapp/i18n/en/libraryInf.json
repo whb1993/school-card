@@ -1,0 +1,26 @@
+{
+    "schoolCardApp": {
+        "libraryInf": {
+            "home": {
+                "title": "Library Infs",
+                "createLabel": "Create a new Library Inf",
+                "createOrEditLabel": "Create or edit a Library Inf"
+            },
+            "created": "A new Library Inf is created with identifier {{ param }}",
+            "updated": "A Library Inf is updated with identifier {{ param }}",
+            "deleted": "A Library Inf is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Library Inf {{ id }}?"
+            },
+            "detail": {
+                "title": "Library Inf"
+            },
+            "bookId": "Book Id",
+            "bookno": "Bookno",
+            "cardstates": "Cardstates",
+            "borlist": "Borlist",
+            "adid": "Adid",
+            "libId": "Lib Id"
+        }
+    }
+}

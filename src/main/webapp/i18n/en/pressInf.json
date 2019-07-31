@@ -1,0 +1,25 @@
+{
+    "schoolCardApp": {
+        "pressInf": {
+            "home": {
+                "title": "Press Infs",
+                "createLabel": "Create a new Press Inf",
+                "createOrEditLabel": "Create or edit a Press Inf"
+            },
+            "created": "A new Press Inf is created with identifier {{ param }}",
+            "updated": "A Press Inf is updated with identifier {{ param }}",
+            "deleted": "A Press Inf is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Press Inf {{ id }}?"
+            },
+            "detail": {
+                "title": "Press Inf"
+            },
+            "pressId": "Press Id",
+            "pplace": "Pplace",
+            "cardId": "Card Id",
+            "pmoney": "Pmoney",
+            "ptime": "Ptime"
+        }
+    }
+}

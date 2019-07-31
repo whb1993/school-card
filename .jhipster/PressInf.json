@@ -1,0 +1,35 @@
+{
+    "name": "PressInf",
+    "fields": [
+        {
+            "fieldName": "pressId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pplace",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pmoney",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ptime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730141007",
+    "entityTableName": "press_inf",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

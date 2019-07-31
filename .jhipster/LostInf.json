@@ -1,0 +1,31 @@
+{
+    "name": "LostInf",
+    "fields": [
+        {
+            "fieldName": "lostId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lostime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "adId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730141006",
+    "entityTableName": "lost_inf",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

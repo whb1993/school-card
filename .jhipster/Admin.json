@@ -1,0 +1,27 @@
+{
+    "name": "Admin",
+    "fields": [
+        {
+            "fieldName": "adid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adsex",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730141003",
+    "entityTableName": "admin",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

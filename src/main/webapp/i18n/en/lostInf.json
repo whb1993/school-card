@@ -1,0 +1,24 @@
+{
+    "schoolCardApp": {
+        "lostInf": {
+            "home": {
+                "title": "Lost Infs",
+                "createLabel": "Create a new Lost Inf",
+                "createOrEditLabel": "Create or edit a Lost Inf"
+            },
+            "created": "A new Lost Inf is created with identifier {{ param }}",
+            "updated": "A Lost Inf is updated with identifier {{ param }}",
+            "deleted": "A Lost Inf is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Lost Inf {{ id }}?"
+            },
+            "detail": {
+                "title": "Lost Inf"
+            },
+            "lostId": "Lost Id",
+            "cardId": "Card Id",
+            "lostime": "Lostime",
+            "adId": "Ad Id"
+        }
+    }
+}

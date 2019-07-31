@@ -1,0 +1,39 @@
+{
+    "name": "LibraryInf",
+    "fields": [
+        {
+            "fieldName": "bookId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bookno",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardstates",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "borlist",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "libId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730141008",
+    "entityTableName": "library_inf",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

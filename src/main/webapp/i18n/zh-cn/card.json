@@ -1,0 +1,28 @@
+{
+    "schoolCardApp": {
+        "card": {
+            "home": {
+                "title": "校园卡信息表",
+                "createLabel": "创建新 校园卡信息",
+                "createOrEditLabel": "创建或编辑 校园卡信息"
+            },
+            "created": "校园卡信息 {{ param }} 创建成功",
+            "updated": "校园卡信息 {{ param }} 更新成功",
+            "deleted": "校园卡信息 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 校园卡信息 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "校园卡信息"
+            },
+            "cardId": "校园卡卡号",
+            "cardnum": "持卡人编号",
+            "sname": "持卡人姓名",
+            "ssex": "持卡人性别",
+            "cardstyle": "持卡人类型",
+            "cardmoney": "卡内余额",
+            "cardstates": "校园卡状态",
+            "cardtime": "开卡日期"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="schoolCardApp.libraryInf.home.title">Library Infs</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-library-inf" [routerLink]="['/library-inf/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="schoolCardApp.libraryInf.home.createLabel">
+            Create new Library Inf
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="libraryInfs">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.bookId">Book Id</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.bookno">Bookno</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.cardstates">Cardstates</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.borlist">Borlist</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.adid">Adid</span></th>
+            <th><span jhiTranslate="schoolCardApp.libraryInf.libId">Lib Id</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let libraryInf of libraryInfs ;trackBy: trackId">
+                <td><a [routerLink]="['/library-inf', libraryInf.id, 'view' ]">{{libraryInf.id}}</a></td>
+                <td>{{libraryInf.bookId}}</td>
+                <td>{{libraryInf.bookno}}</td>
+                <td>{{libraryInf.cardstates}}</td>
+                <td>{{libraryInf.borlist}}</td>
+                <td>{{libraryInf.adid}}</td>
+                <td>{{libraryInf.libId}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/library-inf', libraryInf.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/library-inf', libraryInf.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'library-inf', { outlets: { popup: libraryInf.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

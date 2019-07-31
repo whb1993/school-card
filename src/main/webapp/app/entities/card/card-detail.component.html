@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="card">
+            <h2><span jhiTranslate="schoolCardApp.card.detail.title">Card</span> {{card.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="schoolCardApp.card.cardId">Card Id</span></dt>
+                <dd>
+                    <span>{{card.cardId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.cardnum">Cardnum</span></dt>
+                <dd>
+                    <span>{{card.cardnum}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.sname">Sname</span></dt>
+                <dd>
+                    <span>{{card.sname}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.ssex">Ssex</span></dt>
+                <dd>
+                    <span>{{card.ssex}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.cardstyle">Cardstyle</span></dt>
+                <dd>
+                    <span>{{card.cardstyle}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.cardmoney">Cardmoney</span></dt>
+                <dd>
+                    <span>{{card.cardmoney}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.cardstates">Cardstates</span></dt>
+                <dd>
+                    <span>{{card.cardstates}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.card.cardtime">Cardtime</span></dt>
+                <dd>
+                    <span>{{card.cardtime}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/card', card.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

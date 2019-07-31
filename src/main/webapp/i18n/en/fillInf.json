@@ -1,0 +1,26 @@
+{
+    "schoolCardApp": {
+        "fillInf": {
+            "home": {
+                "title": "Fill Infs",
+                "createLabel": "Create a new Fill Inf",
+                "createOrEditLabel": "Create or edit a Fill Inf"
+            },
+            "created": "A new Fill Inf is created with identifier {{ param }}",
+            "updated": "A Fill Inf is updated with identifier {{ param }}",
+            "deleted": "A Fill Inf is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Fill Inf {{ id }}?"
+            },
+            "detail": {
+                "title": "Fill Inf"
+            },
+            "cardno": "Cardno",
+            "cardstyle": "Cardstyle",
+            "fillmoney": "Fillmoney",
+            "filltime": "Filltime",
+            "adId": "Ad Id",
+            "fillnum": "Fillnum"
+        }
+    }
+}

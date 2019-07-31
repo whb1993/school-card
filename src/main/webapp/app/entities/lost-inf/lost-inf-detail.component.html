@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="lostInf">
+            <h2><span jhiTranslate="schoolCardApp.lostInf.detail.title">Lost Inf</span> {{lostInf.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="schoolCardApp.lostInf.lostId">Lost Id</span></dt>
+                <dd>
+                    <span>{{lostInf.lostId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.lostInf.cardId">Card Id</span></dt>
+                <dd>
+                    <span>{{lostInf.cardId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.lostInf.lostime">Lostime</span></dt>
+                <dd>
+                    <span>{{lostInf.lostime}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.lostInf.adId">Ad Id</span></dt>
+                <dd>
+                    <span>{{lostInf.adId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/lost-inf', lostInf.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

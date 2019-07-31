@@ -1,0 +1,24 @@
+{
+    "schoolCardApp": {
+        "lostInf": {
+            "home": {
+                "title": "挂失表",
+                "createLabel": "创建新 挂失信息",
+                "createOrEditLabel": "创建或编辑 挂失信息"
+            },
+            "created": "挂失信息 {{ param }} 创建成功",
+            "updated": "挂失信息 {{ param }} 更新成功",
+            "deleted": "挂失信息 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 挂失信息 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "挂失信息"
+            },
+            "lostId": "本次挂失编号",
+            "cardId": "校园卡卡号",
+            "lostime": "挂失日期",
+            "adId": "管理员编号"
+        }
+    }
+}

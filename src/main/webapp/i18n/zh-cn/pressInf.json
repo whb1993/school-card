@@ -1,0 +1,25 @@
+{
+    "schoolCardApp": {
+        "pressInf": {
+            "home": {
+                "title": "消费表",
+                "createLabel": "创建新 消费记录",
+                "createOrEditLabel": "创建或编辑 消费记录"
+            },
+            "created": "消费记录 {{ param }} 创建成功",
+            "updated": "消费记录 {{ param }} 更新成功",
+            "deleted": "消费记录 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 消费记录 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "消费记录"
+            },
+            "pressId": "消费编号",
+            "pplace": "消费场所",
+            "cardId": "校园卡卡号",
+            "pmoney": "消费金额",
+            "ptime": "消费时间"
+        }
+    }
+}

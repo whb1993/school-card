@@ -1,0 +1,66 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-card-heading" jhiTranslate="schoolCardApp.card.home.createOrEditLabel">Create or edit a Card</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!card.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="card.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardId" for="field_cardId">Card Id</label>
+                    <input type="text" class="form-control" name="cardId" id="field_cardId"
+                        [(ngModel)]="card.cardId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardnum" for="field_cardnum">Cardnum</label>
+                    <input type="text" class="form-control" name="cardnum" id="field_cardnum"
+                        [(ngModel)]="card.cardnum" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.sname" for="field_sname">Sname</label>
+                    <input type="text" class="form-control" name="sname" id="field_sname"
+                        [(ngModel)]="card.sname" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.ssex" for="field_ssex">Ssex</label>
+                    <input type="text" class="form-control" name="ssex" id="field_ssex"
+                        [(ngModel)]="card.ssex" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardstyle" for="field_cardstyle">Cardstyle</label>
+                    <input type="text" class="form-control" name="cardstyle" id="field_cardstyle"
+                        [(ngModel)]="card.cardstyle" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardmoney" for="field_cardmoney">Cardmoney</label>
+                    <input type="text" class="form-control" name="cardmoney" id="field_cardmoney"
+                        [(ngModel)]="card.cardmoney" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardstates" for="field_cardstates">Cardstates</label>
+                    <input type="text" class="form-control" name="cardstates" id="field_cardstates"
+                        [(ngModel)]="card.cardstates" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.card.cardtime" for="field_cardtime">Cardtime</label>
+                    <div class="d-flex">
+                        <input id="field_cardtime" type="datetime-local" class="form-control" name="cardtime" [(ngModel)]="cardtime" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

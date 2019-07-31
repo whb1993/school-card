@@ -1,0 +1,26 @@
+{
+    "schoolCardApp": {
+        "libraryInf": {
+            "home": {
+                "title": "图书馆信息表",
+                "createLabel": "创建新 图书记录",
+                "createOrEditLabel": "创建或编辑 图书记录"
+            },
+            "created": "图书记录 {{ param }} 创建成功",
+            "updated": "图书记录 {{ param }} 更新成功",
+            "deleted": "图书记录 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 图书记录 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "图书记录"
+            },
+            "bookId": "借书编号",
+            "bookno": "图书编号",
+            "cardstates": "一卡通状态",
+            "borlist": "已借数量",
+            "adid": "管理员编号",
+            "libId": "图书馆编号"
+        }
+    }
+}

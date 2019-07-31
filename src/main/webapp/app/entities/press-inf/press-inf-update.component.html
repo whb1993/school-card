@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-press-inf-heading" jhiTranslate="schoolCardApp.pressInf.home.createOrEditLabel">Create or edit a Press Inf</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!pressInf.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="pressInf.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.pressInf.pressId" for="field_pressId">Press Id</label>
+                    <input type="text" class="form-control" name="pressId" id="field_pressId"
+                        [(ngModel)]="pressInf.pressId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.pressInf.pplace" for="field_pplace">Pplace</label>
+                    <input type="text" class="form-control" name="pplace" id="field_pplace"
+                        [(ngModel)]="pressInf.pplace" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.pressInf.cardId" for="field_cardId">Card Id</label>
+                    <input type="text" class="form-control" name="cardId" id="field_cardId"
+                        [(ngModel)]="pressInf.cardId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.pressInf.pmoney" for="field_pmoney">Pmoney</label>
+                    <input type="text" class="form-control" name="pmoney" id="field_pmoney"
+                        [(ngModel)]="pressInf.pmoney" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.pressInf.ptime" for="field_ptime">Ptime</label>
+                    <div class="d-flex">
+                        <input id="field_ptime" type="datetime-local" class="form-control" name="ptime" [(ngModel)]="ptime" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

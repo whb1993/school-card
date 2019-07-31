@@ -1,0 +1,26 @@
+{
+    "schoolCardApp": {
+        "fillInf": {
+            "home": {
+                "title": "充值表",
+                "createLabel": "创建新 充值信息",
+                "createOrEditLabel": "创建或编辑 充值信息"
+            },
+            "created": "充值信息 {{ param }} 创建成功",
+            "updated": "充值信息 {{ param }} 更新成功",
+            "deleted": "充值信息 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 充值信息 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "充值信息"
+            },
+            "cardno": "校园卡卡号",
+            "cardstyle": "持卡人类型",
+            "fillmoney": "充值金额",
+            "filltime": "充值日期",
+            "adId": "管理员编号",
+            "fillnum": "本次充值编号"
+        }
+    }
+}

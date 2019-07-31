@@ -1,0 +1,47 @@
+{
+    "name": "Card",
+    "fields": [
+        {
+            "fieldName": "cardId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardnum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ssex",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardstyle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardmoney",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardstates",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cardtime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730141004",
+    "entityTableName": "card",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

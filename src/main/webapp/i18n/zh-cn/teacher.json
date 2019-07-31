@@ -1,0 +1,24 @@
+{
+    "schoolCardApp": {
+        "teacher": {
+            "home": {
+                "title": "教职工信息表",
+                "createLabel": "创建新 教职工信息表",
+                "createOrEditLabel": "创建或编辑 教职工信息表"
+            },
+            "created": "教职工信息表 {{ param }} 创建成功",
+            "updated": "教职工信息表 {{ param }} 更新成功",
+            "deleted": "教职工信息表 {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 教职工信息表 {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "教职工信息表"
+            },
+            "tid": "编号",
+            "tname": "姓名",
+            "tsex": "性别",
+            "tspecial": "学院"
+        }
+    }
+}

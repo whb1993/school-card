@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-student-heading" jhiTranslate="schoolCardApp.student.home.createOrEditLabel">Create or edit a Student</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!student.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="student.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.student.sid" for="field_sid">Sid</label>
+                    <input type="text" class="form-control" name="sid" id="field_sid"
+                        [(ngModel)]="student.sid" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.student.sname" for="field_sname">Sname</label>
+                    <input type="text" class="form-control" name="sname" id="field_sname"
+                        [(ngModel)]="student.sname" required/>
+                    <div [hidden]="!(editForm.controls.sname?.dirty && editForm.controls.sname?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.sname?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.student.ssex" for="field_ssex">Ssex</label>
+                    <input type="text" class="form-control" name="ssex" id="field_ssex"
+                        [(ngModel)]="student.ssex" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.student.sspecial" for="field_sspecial">Sspecial</label>
+                    <input type="text" class="form-control" name="sspecial" id="field_sspecial"
+                        [(ngModel)]="student.sspecial" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="schoolCardApp.student.sclass" for="field_sclass">Sclass</label>
+                    <input type="text" class="form-control" name="sclass" id="field_sclass"
+                        [(ngModel)]="student.sclass" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

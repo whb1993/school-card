@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pressInf">
+            <h2><span jhiTranslate="schoolCardApp.pressInf.detail.title">Press Inf</span> {{pressInf.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="schoolCardApp.pressInf.pressId">Press Id</span></dt>
+                <dd>
+                    <span>{{pressInf.pressId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.pressInf.pplace">Pplace</span></dt>
+                <dd>
+                    <span>{{pressInf.pplace}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.pressInf.cardId">Card Id</span></dt>
+                <dd>
+                    <span>{{pressInf.cardId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.pressInf.pmoney">Pmoney</span></dt>
+                <dd>
+                    <span>{{pressInf.pmoney}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.pressInf.ptime">Ptime</span></dt>
+                <dd>
+                    <span>{{pressInf.ptime}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/press-inf', pressInf.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

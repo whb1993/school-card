@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="libraryInf">
+            <h2><span jhiTranslate="schoolCardApp.libraryInf.detail.title">Library Inf</span> {{libraryInf.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.bookId">Book Id</span></dt>
+                <dd>
+                    <span>{{libraryInf.bookId}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.bookno">Bookno</span></dt>
+                <dd>
+                    <span>{{libraryInf.bookno}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.cardstates">Cardstates</span></dt>
+                <dd>
+                    <span>{{libraryInf.cardstates}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.borlist">Borlist</span></dt>
+                <dd>
+                    <span>{{libraryInf.borlist}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.adid">Adid</span></dt>
+                <dd>
+                    <span>{{libraryInf.adid}}</span>
+                </dd>
+                <dt><span jhiTranslate="schoolCardApp.libraryInf.libId">Lib Id</span></dt>
+                <dd>
+                    <span>{{libraryInf.libId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/library-inf', libraryInf.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
